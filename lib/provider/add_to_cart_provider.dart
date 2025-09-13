@@ -37,7 +37,6 @@ class CartProvider extends ChangeNotifier {
     for (Product element in _cart) {
       myTotal += element.price * element.quantity;
     }
-    notifyListeners();
     return myTotal;
   }
 

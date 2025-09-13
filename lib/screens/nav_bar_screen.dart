@@ -15,7 +15,9 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex = 2;
   List screens = const [
-    Scaffold(),
+    Scaffold(
+      backgroundColor: kcontentColor,
+    ),
     FavouriteScreen(),
     HomeScreen(),
     CartScreen(),
